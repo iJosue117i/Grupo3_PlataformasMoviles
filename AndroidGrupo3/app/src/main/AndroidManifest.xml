@@ -13,6 +13,9 @@
         android:theme="@style/Theme.G3Metropolitano"
         tools:targetApi="31">
         <activity
+            android:name=".RegistrarTarjeta"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
