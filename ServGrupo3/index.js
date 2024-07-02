@@ -8,9 +8,9 @@ const PUERTO=3000
 
 const conexion = mysql.createConnection({
     host:'localhost',
-    database:'metropolitano',
+    database:'proyectomoviles',
     user:'root',
-    password:'123456'
+    password:'mysql'
 })
 
 app.listen(PUERTO,()=>{
@@ -21,8 +21,8 @@ app.get('/',(req,res)=>{
     res.send('Bienvenido al servicio de metropolitano')
 })
 
-app.get('/clientes',(req,res)=>{
-    const consulta=" SELECT * FROM clientes"
+app.get('/cliente',(req,res)=>{
+    const consulta=" SELECT * FROM cliente"
     conexion.query(consulta,(error,resultado)=>{
         if(error) return console.error(error.message)
             
@@ -32,12 +32,12 @@ app.get('/clientes',(req,res)=>{
             obj.listaPersonas=resultado
             res.json(obj)
         }else{
-            res.json('no hay clientes')
+            res.json('no hay cliente')
         }
     })
 })
 
-app.post('/clientes/registro',(req,res)=>{
+app.post('/cliente/registro',(req,res)=>{
     const cliente={
         cli_nombre:req.body.cli_nombre,
         cli_apellido:req.body.cli_apellido,
