@@ -32,3 +32,4 @@ google-services.json
 # Android Profiling
 *.hprof
 /ServGrupo3/node_modules
+ServGrupo3/package-lock.json
