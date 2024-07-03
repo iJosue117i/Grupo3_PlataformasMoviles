@@ -213,40 +213,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19">
 
-        <ImageView
+        <Button
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/yape" />
+            android:background="@drawable/yape"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <ImageView
+        <Button
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/Plin"/>
+            android:background="@drawable/Plin"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <ImageView
+        <Button
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/visa2" />
+            android:background="@drawable/visa2"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-        <ImageView
+        <Button
             android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/mastercard" />
+            android:background="@drawable/mastercard"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <ImageView
+        <Button
             android:layout_width="50dp"
             android:layout_height="45dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/americanexpress" />
+            android:background="@drawable/americanexpress"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-        <ImageView
+        <Button
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/dinersclub" />
+            android:background="@drawable/dinersclub"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
     </LinearLayout>
