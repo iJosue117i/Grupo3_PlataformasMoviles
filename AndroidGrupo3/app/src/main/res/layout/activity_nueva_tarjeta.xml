@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-2dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,9 +22,9 @@
             android:orientation="horizontal">
 
             <ImageView
-            android:layout_width="60dp"
-            android:layout_height="55dp"
-            android:background="@drawable/atrás" />
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:background="@drawable/atras1" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -54,50 +54,63 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="158dp"
         android:text="Ingresa tu nro de tarjeta"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <EditText
         android:id="@+id/editTextText4"
         android:layout_width="227dp"
         android:layout_height="37dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="89dp"
         android:background="@drawable/entradas_texto"
         android:ems="10"
         android:hint="111111111111"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="180dp"
         android:layout_height="46dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="116dp"
         android:background="@drawable/boton"
         android:text="Registrar tarjeta"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="484dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="672dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/home"/>
+                android:background="@drawable/home" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -137,35 +150,46 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:text="Tipo de tarjeta"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="202dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="227dp"
         android:layout_height="39dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="226dp"
         android:layout_height="36dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/captcha"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText4"
+        app:srcCompat="@drawable/captcha" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="400dp" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

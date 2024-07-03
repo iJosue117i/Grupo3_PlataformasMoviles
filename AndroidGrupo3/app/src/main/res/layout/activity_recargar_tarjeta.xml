@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-2dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/atrás" />
+                android:background="@drawable/atras1" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -37,28 +37,25 @@
     </ScrollView>
 
 
-
-
-
-
-
     <ScrollView
+        android:id="@+id/scrollView5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="672dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/home"/>
+                android:background="@drawable/home" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -112,68 +109,96 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="187dp"
         android:text="selecciona la tarjeta"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="202dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="227dp"
         android:layout_height="39dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="203dp"
         android:text="Monto a recargar"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
 
     <EditText
         android:id="@+id/editTextNumber2"
         android:layout_width="227dp"
         android:layout_height="37dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="89dp"
         android:background="@drawable/entradas_texto"
         android:ems="10"
         android:hint="S/. 0.00"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="335dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="116dp"
         android:text="Selecciona un medio de pago:"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="409dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="180dp"
         android:layout_height="46dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="123dp"
         android:background="@drawable/boton"
         android:text="Pagar"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="526dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="440dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:gravity="center">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19">
 
         <ImageView
             android:layout_width="40dp"
@@ -185,31 +210,30 @@
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/Plin"/>
+            android:background="@drawable/plin" />
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/visa2"/>
+            android:background="@drawable/visa2" />
 
         <ImageView
-        android:layout_width="50dp"
-        android:layout_height="45dp"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
             android:layout_marginRight="15dp"
-        android:background="@drawable/mastercard"/>
+            android:background="@drawable/mastercard" />
 
         <ImageView
-        android:layout_width="50dp"
-        android:layout_height="45dp"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
             android:layout_marginRight="15dp"
-        android:background="@drawable/americanexpress"/>
+            android:background="@drawable/americanexpress" />
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/dinersclub"/>
-
+            android:background="@drawable/dinersclub" />
 
 
     </LinearLayout>
