@@ -68,7 +68,20 @@ app.get('/login',(req,res)=>{
     })
 })
 
-app.get('/tarjeta',(req,res)=>{
+app.post('/targeta/registro',(req,res)=>{
+    const tarjeta={
+        tarj_saldo:0.00,
+        tipo_tarj_id:req.body.tipo_tarj_id
+    }
+
+    const query = "INSERT INTO tarjeta_metro SET?"
+    conexion.query(query,tarjeta,(error)=>{
+        if(error) return console.error(error.message)
+        res.json("Se inserto correctamente una tarjeta de metropolitano")
+    })
+})
+
+app.get('/tarjeta/listar',(req,res)=>{
     const {cli_id}=req.params
     const query="SELECT c.cli_id, tm.tarj_id, tm.tarj_saldo, tm.tipo_tarj_id FROM cliente c JOIN tarjeta_metro tm ON c.fk_tarj_id = tm.tarj_id WHERE c.cli_id = ?"  
 

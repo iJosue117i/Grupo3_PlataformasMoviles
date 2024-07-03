@@ -12,8 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-2dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +25,7 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/atrás" />
+                android:background="@drawable/atras1" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -40,19 +41,20 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="672dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/home"/>
+                android:background="@drawable/home" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -91,16 +93,18 @@
         app:layout_constraintTop_toBottomOf="@+id/scrollView7" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="180dp"
-        android:gravity="center">
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
 
         <ImageView
             android:layout_width="300dp"
             android:layout_height="180dp"
-            android:background="@drawable/tarjetavisa"/>
+            android:background="@drawable/tarjetavisa" />
 
     </LinearLayout>
 
@@ -108,48 +112,58 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
         android:text="Número del titular:"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <EditText
         android:id="@+id/editTextText7"
         android:layout_width="144dp"
         android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:hint="------"
         android:inputType="text"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="388dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <EditText
         android:id="@+id/editTextNumber5"
         android:layout_width="131dp"
         android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:hint="XX/XX"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="454dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="131dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="48dp"
         android:text="Fecha de caducidad"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/PAPELERARECICLAJE"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="511dp"/>
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:srcCompat="@drawable/PAPELERARECICLAJE" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
