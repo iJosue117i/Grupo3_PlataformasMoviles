@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarTarjetaCreditoDebito">
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#000B7F"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:background="@drawable/atrás" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="290dp"
+                android:background="@drawable/minilogometro" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000B7F"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="672dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:background="@drawable/home"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/historial" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/recargar" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/historial" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="259dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="28dp"
+        android:text="Añadir nueva tarjeta de credito/debito"
+        android:textAlignment="center"
+        android:textColor="#000B7F"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de la tarjeta"
+        android:textColor="#000B7F"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="304dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="227dp"
+        android:layout_height="37dp"
+        android:background="@drawable/entradas_texto"
+        android:ems="10"
+        android:hint="XXXX XXXX XXXX XXXX"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de caducidad"
+        android:textColor="#000B7F"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del titular"
+        android:textColor="#000B7F"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="433dp" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="227dp"
+        android:layout_height="37dp"
+        android:background="@drawable/entradas_texto"
+        android:ems="10"
+        android:hint="Nombres y Apellidos"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:background="@drawable/entradas_texto"
+        android:ems="10"
+        android:hint="XX/XX"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="248dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVV"
+        android:textColor="#000B7F"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="130dp"
+        android:layout_height="28dp"
+        android:background="@drawable/entradas_texto"
+        android:ems="10"
+        android:hint="000"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:background="@drawable/boton"
+        android:text="Guardar tarjeta"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="582dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="175dp"
+        orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:background="@drawable/tarjetavisa"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
