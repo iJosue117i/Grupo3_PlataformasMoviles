@@ -12,8 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-2dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +26,7 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/atrás" />
+                android:background="@drawable/atras1" />
 
             <ImageView
                 android:layout_width="60dp"
@@ -38,39 +40,46 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="65dp"
         android:background="#000B7F"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="672dp">
+        tools:layout_editor_absoluteY="671dp"
+        tools:ignore="MissingConstraints">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="55dp"
-                android:background="@drawable/home"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/home"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
-                android:background="@drawable/historial" />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/historial"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
-                android:background="@drawable/recargar" />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/recargar"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="55dp"
-                android:layout_marginLeft="30dp"
-                android:background="@drawable/historial" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/notificaciones2"
+                tools:ignore="SpeakableTextPresentCheck" />
 
 
         </LinearLayout>
@@ -91,16 +100,18 @@
         app:layout_constraintTop_toBottomOf="@+id/scrollView7" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="180dp"
-        android:gravity="center">
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24">
 
         <ImageView
             android:layout_width="300dp"
             android:layout_height="180dp"
-            android:background="@drawable/tarjetavisa"/>
+            android:background="@drawable/tarjetavisa" />
 
     </LinearLayout>
 
@@ -108,48 +119,62 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
         android:text="Número del titular:"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/editTextText7"
         android:layout_width="144dp"
         android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:hint="------"
         android:inputType="text"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="199dp"
-        tools:layout_editor_absoluteY="388dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextNumber5"
         android:layout_width="131dp"
         android:layout_height="42dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:hint="XX/XX"
-        tools:layout_editor_absoluteX="214dp"
-        tools:layout_editor_absoluteY="454dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="131dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="48dp"
         android:text="Fecha de caducidad"
         android:textColor="#000B7F"
         android:textSize="15dp"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:ignore="TextSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@drawable/PAPELERARECICLAJE"
-        tools:layout_editor_absoluteX="329dp"
-        tools:layout_editor_absoluteY="511dp"/>
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        app:srcCompat="@drawable/PAPELERARECICLAJE"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

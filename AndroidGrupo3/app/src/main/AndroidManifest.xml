@@ -2,18 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.G3Metropolitano"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".RegistrarTarjeta"
+=======
+            android:name=".MisTarjetasDebitoCredito"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarTarjetaCreditoDebito"
+            android:exported="false" />
+        <activity
+            android:name=".RecargarTarjeta"
+            android:exported="false" />
+        <activity
+            android:name=".NuevaTarjeta"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroCliente"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".MainActivity"
