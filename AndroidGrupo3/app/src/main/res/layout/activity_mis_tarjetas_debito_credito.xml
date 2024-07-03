@@ -23,16 +23,18 @@
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
-            <ImageView
+            <Button
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/atras1" />
+                android:background="@drawable/atras1"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageView
+            <Button
                 android:layout_width="60dp"
                 android:layout_height="55dp"
                 android:layout_marginLeft="290dp"
-                android:background="@drawable/minilogometro" />
+                android:background="@drawable/minilogometro"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
 
