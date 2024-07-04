@@ -163,6 +163,7 @@
         android:layout_marginStart="95dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="89dp"
+        android:paddingLeft="15dp"
         android:background="@drawable/entradas_texto"
         android:ems="10"
         android:hint="S/. 0.00"
@@ -226,7 +227,7 @@
             android:layout_width="40dp"
             android:layout_height="35dp"
             android:layout_marginRight="15dp"
-            android:background="@drawable/Plin"
+            android:background="@drawable/pli"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button

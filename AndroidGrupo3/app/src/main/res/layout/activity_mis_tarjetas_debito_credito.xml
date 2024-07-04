@@ -177,6 +177,6 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26"
-        app:srcCompat="@drawable/PAPELERARECICLAJE"/>
+        app:srcCompat="@drawable/pape"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
