@@ -37,56 +37,27 @@ class RegistroCliente : AppCompatActivity() {
         }
         asignarDatos()
     }
-    private  fun asignarDatos(){
+    private  fun asignarDatos() {
         regCorreo = findViewById(R.id.regCorreo)
         regContra = findViewById(R.id.regContra)
-        regTipo= findViewById(R.id.regTipo)
+        regTipo = findViewById(R.id.regTipo)
         regNumeroTarjeta = findViewById(R.id.regNumeroTarjeta)
         regNombre = findViewById(R.id.regNombre)
         regApellido = findViewById(R.id.regApellido)
-        btnRegistrar = findViewById(R.id.btnRegistrar)
 
+                btnRegistrar= findViewById(R.id.btnRegistrar)
         btnRegistrar.setOnClickListener {
-            registrar()
-
-            btnVolver = findViewById(R.id.btnVolver)
-            btnVolver.setOnClickListener {
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-            }
+            val intent = Intent(this, RecargarTarjeta::class.java)
+            startActivity(intent)
         }
-
-
-    }
-    private fun registrar(){
-        val correo = regCorreo.text.toString()
-        val contra= regContra.text.toString()
-        val tipo = regTipo.dropDownVerticalOffset.toString()
-        val tarjeta = regNumeroTarjeta.text.toString()
-        val nombre = regNombre.text.toString()
-        val apellido = regApellido.text.toString()
-
-        val cliente = Cliente (0, nombre, apellido, correo, contra, 0,0)
-        CoroutineScope(Dispatchers.IO).launch {
-            val rpta = RetrofitClient.webService.agregarCliente(cliente)
-            runOnUiThread {
-                if(rpta.isSuccessful){
-                    mostrarMensaje(rpta.body().toString())
-                }
-            }
-        }
-
-    }
-    private fun mostrarMensaje(mensaje:String){
-        val ventana = AlertDialog.Builder(this)
-        ventana.setTitle("Información")
-        ventana.setMessage(mensaje)
-        ventana.setPositiveButton("Aceptar", DialogInterface.OnClickListener{ dialog, which ->
+        btnVolver = findViewById(R.id.btnVolver)
+        btnVolver.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-        })
-        ventana.create().show()
+        }
+    }
 
-}
-}
+        }
+
+
 

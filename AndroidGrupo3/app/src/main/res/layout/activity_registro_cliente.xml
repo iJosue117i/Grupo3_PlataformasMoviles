@@ -26,8 +26,7 @@
                 android:id="@+id/btnVolver"
                 android:layout_width="60dp"
                 android:layout_height="55dp"
-                android:background="@drawable/atras1"
-                tools:ignore="SpeakableTextPresentCheck" />
+                android:background="@drawable/atras1" />
 
             <Button
                 android:layout_width="60dp"

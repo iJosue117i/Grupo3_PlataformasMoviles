@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#000B7F"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck">
@@ -73,12 +74,15 @@
         android:layout_width="227dp"
         android:layout_height="37dp"
         android:layout_marginStart="95dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="89dp"
         android:background="@drawable/entradas_texto"
         android:ems="10"
         android:hint="111111111111"
+        android:paddingLeft="15dp"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
@@ -102,9 +106,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="65dp"
+        android:layout_marginTop="130dp"
         android:background="#000B7F"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="671dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="MissingConstraints">
 
 
@@ -192,7 +199,7 @@
         android:layout_height="36dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText4"
         app:srcCompat="@drawable/captcha" />
