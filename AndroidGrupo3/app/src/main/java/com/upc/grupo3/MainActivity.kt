@@ -38,5 +38,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RegistroCliente::class.java)
             startActivity(intent)
         }
+        btnIniciarSesion = findViewById(R.id.btnIniciarSesion)
+        btnIniciarSesion.setOnClickListener {
+            val intent = Intent(this, RecargarTarjeta::class.java)
+            startActivity(intent)}
     }
 }

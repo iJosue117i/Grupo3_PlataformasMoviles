@@ -25,6 +25,7 @@ class RegistroCliente : AppCompatActivity() {
     private lateinit var regNombre:EditText
     private lateinit var regApellido:EditText
     private lateinit var btnRegistrar: TextView
+    private lateinit var btnVolver:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -47,7 +48,14 @@ class RegistroCliente : AppCompatActivity() {
 
         btnRegistrar.setOnClickListener {
             registrar()
+
+            btnVolver = findViewById(R.id.btnVolver)
+            btnVolver.setOnClickListener {
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
+
 
     }
     private fun registrar(){
